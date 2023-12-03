@@ -1,0 +1,81 @@
+*{
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+body {
+ 
+  font-family: poppins, Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  background-color: #fff;
+}
+.navbar {
+  border-top: 2px solid red;
+  border-bottom: 2px solid red;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-bottom: 50px;
+  z-index: 999;
+  background-color: #fff;
+}
+.container {
+  max-width: 1100px;
+  margin: 0 auto; 
+  padding: 10px;
+}
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+}
+.menu-list {
+  padding: 5px;
+}
+
+.menu-list{
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+.menu-list a {
+  margin-right: 15px;
+}
+.menu-list a {
+  padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+    color: black;
+  
+  }
+  .menu-list a:hover{
+    background-color: black;
+    color: #fff;
+  } 
+  
+/* Hide the link that should open and close the topnav on small screens */
+ .menu .icon {
+  display: ;
+} 
+
+
+
+
+/* media query */
+@media screen and (max-width: 600px) {
+ .menu-list a:not(:first-child) {display: none;}
+  .menu-list .responsive {position: relative;}
+  .menu-list.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .menu-list.responsive a {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+   display: block;
+  }
+}
